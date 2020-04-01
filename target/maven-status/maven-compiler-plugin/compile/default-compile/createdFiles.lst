@@ -1,0 +1,5 @@
+com/ithub/ithubevents/domain/Event.class
+com/ithub/ithubevents/common/exception/FrontEndException.class
+com/ithub/ithubevents/repository/EventRepository.class
+com/ithub/ithubevents/common/exception/ErrorCode.class
+com/ithub/ithubevents/common/exception/InternalServerException.class

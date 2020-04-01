@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://ithubevents-db.mysql.database.azure.com:3306/ithubeventsdev?serverTimezone=UTC&useSSL=false&requireSSL=false
+    username: ithubeventsadmin@ithubevents-db
+    password: It3v#n7z
+  jpa:
+    hibernate.ddl-auto: none
+    generate-ddl: false
+    show-sql: false
+  main:
+    allow-bean-definition-overriding: true
+
+  flyway:
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+    url: jdbc:mysql://ithubevents-db.mysql.database.azure.com:3306/ithubeventsdev?serverTimezone=UTC&useSSL=false&requireSSL=false
+    user: ithubeventsadmin@ithubevents-db
+    password: It3v#n7z
+    skip-default-callbacks: true

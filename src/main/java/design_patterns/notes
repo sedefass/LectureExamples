@@ -2,10 +2,23 @@ What are DessignPatterns
     https://stackabuse.com/design-patterns-in-java/
 
 Creational Patterns
+    - Factory - in charge of creating objects of classes belonging to a certain logical segment
+    - Abstract Factory - factory for factories
+    - Builder - helps creating object of classes with huge amount of fields in a step-by-step manner
+    - Prototype - minimizes cost of object creation by using copies of already created objects
+    - Singleton - ensures the existence of only one object instance of the class in the whole JVM
     https://stackabuse.com/creational-design-patterns-in-java/
 
 Structural Patterns
+    - Adapter - adapts one interface to another / https://www.tutorialspoint.com/design_pattern/adapter_pattern.htm /
+    - Bridge - segregate abstract classes from their implementations and act as a bridge between them
+    - Filter - filters through collection of objects with different custom filter criteria
+    - Decorator - alters an individual instance of a class at runtime, by creating a decorator class which wraps the original class.
+    - Facade - provides a simple and top-level interface for the client and allows it to access the system, without knowing any of the system logic and inner-workings.
+    - Flyweight - reduces the strain on the JVM and its memory. This is crucial for devices without much memory, as well as optimization of the application.
+    - Proxy - limits the capabilities and the functionalities of a class, by using restrictor class.
     https://stackabuse.com/structural-design-patterns-in-java/
+
 
 Behavioral Patterns
     https://stackabuse.com/behavioral-design-patterns-in-java/

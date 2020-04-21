@@ -1,5 +1,14 @@
 package design_patterns.b_structural.filter;
 
+import design_patterns.b_structural.filter.a.Employee;
+import design_patterns.b_structural.filter.a.Filter;
+import design_patterns.b_structural.filter.b.FilterFemale;
+import design_patterns.b_structural.filter.b.FilterJunior;
+import design_patterns.b_structural.filter.b.FilterMale;
+import design_patterns.b_structural.filter.b.FilterSenior;
+import design_patterns.b_structural.filter.c.ConditionFilterAnd;
+import design_patterns.b_structural.filter.c.ConditionFilterOr;
+
 import java.util.ArrayList;
 import java.util.List;
 

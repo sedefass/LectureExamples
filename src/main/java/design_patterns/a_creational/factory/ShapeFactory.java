@@ -1,5 +1,10 @@
 package design_patterns.a_creational.factory;
 
+import design_patterns.a_creational.factory.shape.Rectangle;
+import design_patterns.a_creational.factory.shape.Shape;
+import design_patterns.a_creational.factory.shape.Square;
+import design_patterns.a_creational.factory.shape.Triangle;
+
 public class ShapeFactory {
 
     public Shape getShape(Shape.ShapeType shapeType) {

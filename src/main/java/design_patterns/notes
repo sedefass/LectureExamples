@@ -1,24 +1,38 @@
 What are DessignPatterns
+    - sets of standardized practices
+    - solutions, provided by the community, to common problems
+    - tricks for producing higher quality applications
     https://stackabuse.com/design-patterns-in-java/
 
 Creational Patterns
-    - Factory - in charge of creating objects of classes belonging to a certain logical segment
-    - Abstract Factory - factory for factories
     - Builder - helps creating object of classes with huge amount of fields in a step-by-step manner
-    - Prototype - minimizes cost of object creation by using copies of already created objects
+    - Factory - in charge of creating objects of classes belonging to a certain logical segment
+    - (-) Abstract Factory - factory for factories
+    - (-) Prototype - minimizes cost of object creation by using copies of already created objects
     - Singleton - ensures the existence of only one object instance of the class in the whole JVM
     https://stackabuse.com/creational-design-patterns-in-java/
 
 Structural Patterns
     - Adapter - adapts one interface to another / https://www.tutorialspoint.com/design_pattern/adapter_pattern.htm /
-    - Bridge - segregate abstract classes from their implementations and act as a bridge between them
-    - Filter - filters through collection of objects with different custom filter criteria
+    - (-) Bridge - segregate abstract classes from their implementations and act as a bridge between them
     - Decorator - alters an individual instance of a class at runtime, by creating a decorator class which wraps the original class.
     - Facade - provides a simple and top-level interface for the client and allows it to access the system, without knowing any of the system logic and inner-workings.
-    - Flyweight - reduces the strain on the JVM and its memory. This is crucial for devices without much memory, as well as optimization of the application.
-    - Proxy - limits the capabilities and the functionalities of a class, by using restrictor class.
+    - Filter - filters through collection of objects with different custom filter criteria
+    - (-) Flyweight - reduces the strain on the JVM and its memory. This is crucial for devices without much memory, as well as optimization of the application.
+    - Proxy - limits the capabilities and the functionality of a class, by using restrictor class.
     https://stackabuse.com/structural-design-patterns-in-java/
 
 
 Behavioral Patterns
+    - Chain of Responsibility - It defines a chain of objects, that collectively, one after another, process the request - where each processor in the chain has its own processing logic.
+    - Command - works by wrapping the request from the sender in an object called a command. This command is then passed to the invoker object, which proceeds to look for the adequate way to process the request.
+    - Interpreter - interprets the input (language / Java code) and transforms it (another language / bytecode)
+    - Iterator - used as the core pattern of Java's Collection Framework. It's used to access the members of collections all the while hiding the underlying implementation.
+    - Mediator - acts as a bridge and, as the name implies, the mediator between different objects which communicate in any way. In large-scale applications, direct communication means tight-coupling which makes it hard to test, maintain and scale.
+    - Memento - used for saving states of objects
+    - Observer - used to monitor the state of a certain object, often in a group or one-to-many relationship. In such cases, most of the time, the changed state of a single object can affect the state of the rest, so there must be a system to note the change and alert the other objects.
+    - State - used when a specific object needs to change its behavior, based on its state.
+    - Strategy - used in situations where algorithms or class' behavior should be dynamic. This means that both the behavior and the algorithms can be changed at runtime, based on the input of the client.
+    - Template - abstract class gives instructions how things needs to be done, but every child class its own implementation according to those instructions
+    - (-) Visitor - used to move the operational logic from each individual element of a group, into a new class, which does the operation for them utilizing the data from each individual element.
     https://stackabuse.com/behavioral-design-patterns-in-java/

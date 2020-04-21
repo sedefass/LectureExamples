@@ -1,5 +1,7 @@
 package design_patterns.b_structural.adapter;
 
+import design_patterns.b_structural.adapter.d.AudioPlayer;
+
 public class Main {
 
     public static void main(String[] args) {

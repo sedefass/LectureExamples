@@ -7,6 +7,10 @@ public class DatabaseConnector {
     private DatabaseConnector() {}
 
     public static DatabaseConnector getInstance() {
+        if (instance == null) {
+            instance = new DatabaseConnector();
+        }
+
         return instance;
     }
 

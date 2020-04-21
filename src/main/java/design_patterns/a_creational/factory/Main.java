@@ -1,5 +1,7 @@
 package design_patterns.a_creational.factory;
 
+import design_patterns.a_creational.factory.shape.Shape;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -19,7 +21,6 @@ public class Main {
         System.out.println(square.getType());
         System.out.println(square.calculateArea());
         System.out.println();
-
     }
 
 }

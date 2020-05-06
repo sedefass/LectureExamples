@@ -1,0 +1,10 @@
+PUT / HTTP/1.1 Host: developer.mozilla.org
+Accept-Language: en
+Authorization: Basic ...
+Content-Type: application/json
+
+{
+    "name": "Aes Dana",
+    "text": "He is great artist!",
+    "date": 2020-05-06
+}

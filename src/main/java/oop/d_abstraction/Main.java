@@ -1,7 +1,5 @@
 package oop.d_abstraction;
 
-import javassist.bytecode.ByteArray;
-
 import java.awt.*;
 
 public class Main {
@@ -11,7 +9,7 @@ public class Main {
         Button button = new Button("blue", "Login", 120, 30);
         button.onClick();
 
-        ImageView imageView = new ImageView(new ByteArray(), 120, 120);
+        ImageView imageView = new ImageView(new byte[]{}, 120, 120);
         imageView.onLongClick();
         imageView.onLongClick(5);
 

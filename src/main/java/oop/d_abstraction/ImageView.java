@@ -1,24 +1,22 @@
 package oop.d_abstraction;
 
-import javassist.bytecode.ByteArray;
-
 public class ImageView implements OnLongClickListener {
 
-    private ByteArray picture;
+    private byte[] picture;
     private double width;
     private double height;
 
-    public ImageView(ByteArray picture, double width, double height) {
+    public ImageView(byte[] picture, double width, double height) {
         this.picture = picture;
         this.width = width;
         this.height = height;
     }
 
-    public ByteArray getPicture() {
+    public byte[] getPicture() {
         return picture;
     }
 
-    public void setPicture(ByteArray picture) {
+    public void setPicture(byte[] picture) {
         this.picture = picture;
     }
 

@@ -1,0 +1,22 @@
+* Linear data structures
+    * Arrays
+        * Single and multi-dimensional
+    * Stack
+    * Queue
+    * ArrayList
+    * LinkedList
+* Non-linear data structures
+    * Hash
+        * HashMap
+        * HashSet
+    * Trees
+        * Binary tree
+        * Binary search tree
+        * AVL tree
+        * Red-black tree
+        * TreeMap and TreeSet
+    * Heap
+        * MaxHeap
+        * MinHeap
+    * Graphs
+* Stream API ???

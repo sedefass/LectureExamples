@@ -1,0 +1,27 @@
+BASICS
+    - What is OOP
+    - Pros and Cons
+        + good for parallel development
+        + reusability
+        + easier to maintain
+        - sometimes is unefficient
+        - it can cause duplication
+    - Basics structure of a Class
+    - Classes and Objects
+    - Static and Non-static data and methods
+    - Access modifiers
+    - Data classes - example from K-Creator /SearchNewsSettings/
+    - Util classes - example from K-Creator /DateUtils/ or java Math
+
+Encapsulation
+    - encapsulation of fields - why we hide fields behind setters and getters
+    - setter validations
+
+Inheritance
+    -
+
+Abstraction
+    -
+
+Polymorphism
+    -

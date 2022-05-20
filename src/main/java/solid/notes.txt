@@ -1,0 +1,71 @@
+https://app.pluralsight.com/library/courses/1d999aa8-870b-4b5e-a2d6-5c9ca24c8526/table-of-contents
+
+SOLID
+    Fragility - tendency of software to break in many places everytime it is changed
+    Rigidity - tendency of software to be difficult to change, even in simple ways. Every change
+        causes a cascade of subsequent changes in dependent modules
+
+    Both are symptoms of high TECHNICAL DEPT
+
+    Technical Dept
+        - Increases the costs of changes
+        - Decreases responsiveness
+
+        - Increases over time no matter how good the team is
+        - Left uncontrolled will kill the project
+        - The key is to keep it under control
+
+        Cycles (Write Code -> Pay Dept)
+
+
+Single Responsibility Principle
+
+
+Open-Close Principle
+    Closed for modification - each new feature should not modify existing code
+    Open for extensions - a component should be extendable to make it behave in new ways
+
+Liskov Substitution Principle
+    If S is a subtype of T, then objects of type T may be replaced with objects of type S without modifying the functionality of the program
+     Example with Squware - Rectangle
+
+Interface Segregation Principle
+    Clients should not be forced to depend on methods that they do not use
+    Examples:
+        Interfaces with a lot of methods
+        Interfaces with low cohesion (methods, that are not in the same context)
+        Clients throws exception instead of implementing methods
+        Clients provide empty implementations
+        Clients forced implementations and become highly coupled
+
+
+Dependency Invertion Principle
+    High level modules should not depend on low level modules. Both should depend on abstraction
+    Abstraction should not depend on details. Details should depend on abstraction
+
+    High level modules:
+        - written to solve real problems and use cases
+        - are more abstract and map to the business logic
+        - dictate what the software should do
+        - Examples: business logic services
+
+    Low level modules:
+        - contain impl details that are required to execute the business logic
+        - are the "plumbing" or the "internals" of a system
+        - dictate how software should do various tasks
+        - Examples: logging, io, data access, network communication
+
+    Both work together. They are not absolute terms, they are relative one to another:
+        Payment uses Notification system uses Email service (Pauyment is HLM and Notification system is LLM,
+        but Email service is LLM to the Notification systemHLM)
+
+    Abstraction - it is not concrete. Cannot be "new" up
+
+    Dependency Injection - a technique that allows the creation of dependent objects outside a class
+    and provide those objects to a class
+
+    Inversion of control - a design principle in which the control of object creation, configuration
+        and lifecycle is passed to a container or framework
+        - makes it easy to switch between different impl at runtime
+        - increases program modularity
+        - manages the lifecycle of objects and their configurations

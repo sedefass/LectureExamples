@@ -2,8 +2,8 @@ package oop.c_inheritance.shapes;
 
 public class Rectangle extends Shape {
 
-    private double a;
-    private double b;
+    protected double a;
+    protected double b;
 
     public Rectangle(double a, double b) {
         // VALIDATIONS

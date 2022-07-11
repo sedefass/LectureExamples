@@ -8,30 +8,36 @@ public class Main {
     public static void main(String[] args) {
         Button button = new Button("blue", "Login", 120, 30);
         button.onClick();
+        System.out.println();
 
         ImageView imageView = new ImageView(new byte[]{}, 120, 120);
-        imageView.onLongClick();
-        imageView.onLongClick(5);
+        imageView.onVerticalSwipe();
+        imageView.onHorizontalSwipe();
+        System.out.println();
 
         TextView textView = new TextView("OOP is in the ba...", new Font("", 1, 1) , 120, 60);
         textView.onClick();
-        textView.onLongClick();
-        textView.onLongClick(7);
+        textView.onVerticalSwipe();
+        textView.onHorizontalSwipe();
+        System.out.println();
 
-        OnLongClickListener myCustomImplementation = new OnLongClickListener() {  // Anonymous class implementation of OnLongClickListener interface
+        OnSwipeListener myCustomImplementation = new OnSwipeListener() {  // Anonymous class implementation of OnSwipeListener interface
+
+            private String hehe = "hehe it works ;) ";
+
             @Override
-            public void onLongClick() {
-                System.out.println("My custom implementation has been long clicked");
+            public void onVerticalSwipe() {
+                System.out.println(hehe +  "My custom implementation has been VERTICALLY swiped");
             }
 
             @Override
-            public void onLongClick(int seconds) {
-                System.out.println("My custom implementation has been long clicked for " + seconds);
+            public void onHorizontalSwipe() {
+                System.out.println("My custom implementation has been HORIZONTALLY swiped");
             }
         };
 
-        myCustomImplementation.onLongClick();
-        myCustomImplementation.onLongClick(10);
+        myCustomImplementation.onVerticalSwipe();
+        myCustomImplementation.onHorizontalSwipe();
     }
 
 }

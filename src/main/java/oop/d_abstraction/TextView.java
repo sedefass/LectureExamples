@@ -2,7 +2,7 @@ package oop.d_abstraction;
 
 import java.awt.*;
 
-public class TextView implements OnClickListener, OnLongClickListener {
+public class TextView implements OnClickListener, OnSwipeListener {
 
     private String text;
     private Font font;
@@ -50,16 +50,17 @@ public class TextView implements OnClickListener, OnLongClickListener {
 
     @Override
     public void onClick() {
+        this.text = "";
         System.out.println("TextView has been JUST clicked");
     }
 
     @Override
-    public void onLongClick() {
-        System.out.println("TextView has been LONG clicked");
+    public void onVerticalSwipe() {
+        System.out.println("TextView has been VERTICALLY swiped");
     }
 
     @Override
-    public void onLongClick(int seconds) {
-        System.out.println("TextView has been LONG clicked for a time of " + seconds);
+    public void onHorizontalSwipe() {
+        System.out.println("TextView has been HORIZONTALLY swiped");
     }
 }

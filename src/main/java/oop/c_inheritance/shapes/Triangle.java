@@ -1,8 +1,5 @@
 package oop.c_inheritance.shapes;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Triangle extends Shape {
 
     private double a;
@@ -49,11 +46,4 @@ public class Triangle extends Shape {
         double p = 0.5 * (a + b + c);
         return Math.sqrt(p * (p - a) * (p - b) * (p - c));  // Heron's Formula
     }
-
-    public List<Double> calculateHeights() {
-        List<Double> result = new ArrayList<>();
-        // Calculate heights and put them in the result /not the best solution, but for the example is good enough/
-        return result;
-    }
-
 }

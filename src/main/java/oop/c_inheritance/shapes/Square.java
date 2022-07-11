@@ -8,18 +8,23 @@ public class Square extends Rectangle {
 
     @Override
     public void setA(double side) {
-        // NO NEED OF VALIDATIONS - they are in Rectangle
         super.setA(side);
         super.setB(side);
     }
 
     @Override
-    @Deprecated
-    public void setB(double side) throws UnsupportedOperationException {
-        throw new UnsupportedOperationException("Man, you are not supposed to use this method, come on!");
+    public void setB(double side) {
+        super.setA(side);
+        super.setB(side);
     }
 
-    // We do not override calculateArea()
+//    @Override
+//    @Deprecated
+//    public void setB(double side) throws UnsupportedOperationException {
+//        throw new UnsupportedOperationException("Man, you are not supposed to use this method, come on!");
+//    }
 
-    // We do not override calculateDiagonal()
+    // No need to override calculateArea()
+
+    // No need to override calculateDiagonal()
 }

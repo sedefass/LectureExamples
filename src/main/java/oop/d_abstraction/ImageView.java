@@ -1,6 +1,6 @@
 package oop.d_abstraction;
 
-public class ImageView implements OnLongClickListener {
+public class ImageView implements OnSwipeListener {
 
     private byte[] picture;
     private double width;
@@ -37,12 +37,14 @@ public class ImageView implements OnLongClickListener {
     }
 
     @Override
-    public void onLongClick() {
-        System.out.println("ImageView has been LONG clicked");
+    public void onVerticalSwipe() {
+        // logic for changing the brightness
+        System.out.println("ImageView has been VERTICALLY swiped");
     }
 
     @Override
-    public void onLongClick(int seconds) {
-        System.out.println("ImageView has been LONG clicked for a time of " + seconds);
+    public void onHorizontalSwipe() {
+        // logic for changing the picture with another one
+        System.out.println("ImageView has been HORIZONTALLY swiped");
     }
 }

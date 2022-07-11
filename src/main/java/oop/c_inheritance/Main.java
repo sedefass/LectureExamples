@@ -1,8 +1,6 @@
 package oop.c_inheritance;
 
-import oop.b_encapsulation.PointA;
 import oop.c_inheritance.shapes.Rectangle;
-import oop.c_inheritance.shapes.Shape;
 import oop.c_inheritance.shapes.Square;
 import oop.c_inheritance.shapes.Triangle;
 
@@ -16,11 +14,11 @@ public class Main {
         System.out.println(triangle.calculateArea());
         System.out.println();
 
-
         Rectangle rectangle = new Rectangle(3, 4);
 //        Rectangle rectangleNope = new Rectangle(Shape.ShapeType.SQUARE, 3, 4); // because this constructor is protected
         System.out.println(rectangle.getType());
         System.out.println(rectangle.calculateArea());
+        System.out.println(rectangle.calculateDiagonal());
         System.out.println();
 
 
@@ -32,8 +30,9 @@ public class Main {
         square.setA(6);
         System.out.println(square.getType());
         System.out.println(square.calculateArea());
+        System.out.println(square.calculateDiagonal());
         System.out.println();
-        square.setB(6);
+        square.setB(7);
         System.out.println(square.getType());
         System.out.println(square.calculateArea());
         System.out.println();

@@ -48,6 +48,7 @@ public class Button implements OnClickListener {
 
     @Override
     public void onClick() {
+        // Functionality behind the button
         System.out.println("Button has been JUST clicked");
     }
 }

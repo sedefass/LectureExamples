@@ -4,7 +4,10 @@ public class Example {
 
     // STATIC FIELDS
     private static int totalCount = 0;
-    public static final String DONTKNOW = "SOMETHING";
+
+    // Show difference between those two
+    public static final int SALARY = 500;
+    public final int salary = 500;
 
     // FIELDS
     private String name;

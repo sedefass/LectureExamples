@@ -1,0 +1,68 @@
+Linear data structures
+    Arrays
+        https://towardsdatascience.com/8-common-data-structures-every-programmer-must-know-171acf6a1a42#:~:text=Data%20Structures%20are%20a%20specialized,Computer%20Science%20and%20Software%20Engineering.
+        indexed
+        fixed-size
+        hold items of the same data type
+        2-dimensional arrays = array of arrays
+        3-dimensional arrays = array of (arrays of arrays)
+        traverse, search, getByIndex, add, remove
+        Application:
+            building blocks for other data structures
+            in different sorting algorithms
+    ArrayList (Vector)
+        indexed
+        hold items of the same data type
+        NOT fixed-size
+        traverse, search, getByIndex, add, remove
+        Application:
+            Most used data structure
+    LinkedList
+        https://towardsdatascience.com/8-common-data-structures-every-programmer-must-know-171acf6a1a42#:~:text=Data%20Structures%20are%20a%20specialized,Computer%20Science%20and%20Software%20Engineering.
+        NOT indexed
+        hold items of the same data type
+        NOT fixed-size
+        access data sequentially
+        random access is not possible
+        traverse, search, getByIndex, add, remove
+        Application:
+            Used in switching between programs using Alt + Tab
+            Where adding, removing elements anywhere in the list
+    Stack
+        LIFO (Last In First Out)
+        NOT indexed
+        hold items of the same data type
+        NOT fixed-size
+        push and pope
+        peek, isEmpty, isFull
+        Applications:
+            Used for expression evaluation
+            Implement function calls in recursion programming
+    Queue
+        FIFO (First In First Out)
+        NOT indexed
+        hold items of the same data type
+        NOT fixed-size
+        enqueue and dequeue
+        peek, isEmpty, isFull
+        Applications:
+            Used to manage threads in multithreading.
+            Used to implement queuing systems
+Non-linear data structures
+    Hash
+        HashMap
+            key-value structure
+            efficient in inserting and searching
+            Using the hash function, we calculate the index of the table (slot) to which each value goes
+        HashSet
+    Trees
+        Binary tree
+        Binary search tree
+        AVL tree
+        Red-black tree
+        TreeMap and TreeSet
+    Heap
+        MaxHeap
+        MinHeap
+    Graphs
+Stream API ???

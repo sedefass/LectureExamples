@@ -76,7 +76,7 @@ public class Computer {
     private int powerSupply;
     private int amountOfRAM;
 
-    private Computer() {
+    public Computer() {
     }
 
     public String getComputerCase() {

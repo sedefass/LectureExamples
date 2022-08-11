@@ -1,6 +1,6 @@
-package design_patterns.b_structural.adapter.b;
+package design_patterns.b_structural.adapter.example02.b;
 
-import design_patterns.b_structural.adapter.a.AdvancedMediaPlayer;
+import design_patterns.b_structural.adapter.example02.a.AdvancedMediaPlayer;
 
 public class VlcPlayer implements AdvancedMediaPlayer {
 

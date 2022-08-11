@@ -14,7 +14,7 @@ Creational Patterns
 
 Structural Patterns
     - Adapter - adapts one interface to another / https://www.tutorialspoint.com/design_pattern/adapter_pattern.htm /
-    - (-) Bridge - segregate abstract classes from their implementations and act as a bridge between them
+    - Bridge - segregate abstract classes from their implementations and act as a bridge between them
     - Decorator - alters an individual instance of a class at runtime, by creating a decorator class which wraps the original class.
     - Facade - provides a simple and top-level interface for the client and allows it to access the system, without knowing any of the system logic and inner-workings.
     - Filter - filters through collection of objects with different custom filter criteria

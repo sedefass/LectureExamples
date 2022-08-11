@@ -1,11 +1,8 @@
 package design_patterns.c_behavioural.chain.of.responsibility.a;
 
 public abstract class Employee {
-    public static int PROGRAMER = 1;
-    public static int LEAD_PROGRAMER = 2;
-    public static int MANAGER = 3;
 
-    protected int authorityLevel;
+    protected AuthorityLevel authorityLevel;
 
     protected Employee nextEmployee;
 
@@ -13,8 +10,8 @@ public abstract class Employee {
         this.nextEmployee = employee;
     }
 
-    public void doWork(int authorityLevel, String message) {
-        if (this.authorityLevel <= authorityLevel) {
+    public void doWork(AuthorityLevel authorityLevel, String message) {
+        if (this.authorityLevel.getLevel() <= authorityLevel.getLevel()) {
             write(message);
         }
         if (nextEmployee != null) {
@@ -23,4 +20,14 @@ public abstract class Employee {
     }
 
     abstract protected void write(String message);
+
+    public void chain() {
+        System.out.println(authorityLevel + " before feedback chain");
+
+        if (nextEmployee != null) {
+            nextEmployee.chain();
+        }
+
+        System.out.println(authorityLevel + " after feedback chain");
+    }
 }

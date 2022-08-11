@@ -15,6 +15,6 @@ public class DatabaseConnector {
     }
 
     public void showMessage() {
-        System.out.println("I'm a singleton object!");
+        System.out.println(instance.hashCode());
     }
 }

@@ -1,10 +1,11 @@
 package design_patterns.c_behavioural.chain.of.responsibility.b;
 
+import design_patterns.c_behavioural.chain.of.responsibility.a.AuthorityLevel;
 import design_patterns.c_behavioural.chain.of.responsibility.a.Employee;
 
 public class Programmer extends Employee {
 
-    public Programmer(int authorityLevel) {
+    public Programmer(AuthorityLevel authorityLevel) {
         this.authorityLevel = authorityLevel;
     }
 

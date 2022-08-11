@@ -14,7 +14,7 @@ public class ProxyMediaFile implements MediaFile {
 
     @Override
     public void openFile() {
-        if(mediaFileImpl == null){
+        if (mediaFileImpl == null) {
             mediaFileImpl = new MediaFileImpl(fileName);
             mediaFileImpl.downloadFile(fileName);
         }

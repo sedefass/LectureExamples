@@ -18,5 +18,15 @@ public class Main {
 
         battleContext.setStrategy(new Retreat());
         System.out.println(battleContext.executeStrategy("escape tunnel"));
+
+        //  COMBINATION WITH FACTORY EXAMPLE
+        //  BattleStrategyFactory factory = new BattleStrategyFactory();
+        //  BattleStrategy strategy = factory.getBattleStrategy(...);
+        //  battleContext.setStrategy(strategy);
+        //  battleContext.executeStrategy();
+
+        //  LIST EXAMPLE
+        //  List<BattleStrategy> battleStrategies;
+        //  iterate and applyStrategy
     }
 }

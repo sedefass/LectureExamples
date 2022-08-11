@@ -1,23 +1,23 @@
 package design_patterns.c_behavioural.strategy.c;
 
-import design_patterns.c_behavioural.strategy.a.Strategy;
+import design_patterns.c_behavioural.strategy.a.BattleStrategy;
 
 public class BattleContext {
-    private Strategy strategy;
+    private BattleStrategy battleStrategy;
 
-    public BattleContext(Strategy strategy) {
-        this.strategy = strategy;
+    public BattleContext(BattleStrategy battleStrategy) {
+        this.battleStrategy = battleStrategy;
     }
 
-    public Strategy getStrategy() {
-        return strategy;
+    public BattleStrategy getStrategy() {
+        return battleStrategy;
     }
 
-    public void setStrategy(Strategy strategy) {
-        this.strategy = strategy;
+    public void setStrategy(BattleStrategy battleStrategy) {
+        this.battleStrategy = battleStrategy;
     }
 
     public String executeStrategy(String strategyElement) {
-        return strategy.applyStrategy(strategyElement);
+        return battleStrategy.applyStrategy(strategyElement);
     }
 }

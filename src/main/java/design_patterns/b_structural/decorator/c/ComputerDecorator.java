@@ -4,7 +4,7 @@ import design_patterns.b_structural.decorator.a.Computer;
 
 public abstract class ComputerDecorator implements Computer {
 
-    protected Computer computer;
+    private final Computer computer;
 
     public ComputerDecorator(Computer computer) {
         this.computer = computer;

@@ -1,7 +1,7 @@
-package design_patterns.b_structural.adapter.d;
+package design_patterns.b_structural.adapter.example02.d;
 
-import design_patterns.b_structural.adapter.a.MediaPlayer;
-import design_patterns.b_structural.adapter.c.MediaAdapter;
+import design_patterns.b_structural.adapter.example02.a.MediaPlayer;
+import design_patterns.b_structural.adapter.example02.c.MediaAdapter;
 
 public class AudioPlayer implements MediaPlayer {
     MediaAdapter mediaAdapter;

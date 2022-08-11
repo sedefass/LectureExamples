@@ -1,6 +1,6 @@
-package design_patterns.b_structural.adapter;
+package design_patterns.b_structural.adapter.example02;
 
-import design_patterns.b_structural.adapter.d.AudioPlayer;
+import design_patterns.b_structural.adapter.example02.d.AudioPlayer;
 
 public class Main {
 

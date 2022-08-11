@@ -1,9 +1,9 @@
-package design_patterns.b_structural.adapter.c;
+package design_patterns.b_structural.adapter.example02.c;
 
-import design_patterns.b_structural.adapter.a.AdvancedMediaPlayer;
-import design_patterns.b_structural.adapter.a.MediaPlayer;
-import design_patterns.b_structural.adapter.b.Mp4Player;
-import design_patterns.b_structural.adapter.b.VlcPlayer;
+import design_patterns.b_structural.adapter.example02.a.AdvancedMediaPlayer;
+import design_patterns.b_structural.adapter.example02.a.MediaPlayer;
+import design_patterns.b_structural.adapter.example02.b.Mp4Player;
+import design_patterns.b_structural.adapter.example02.b.VlcPlayer;
 
 public class MediaAdapter implements MediaPlayer {
 
